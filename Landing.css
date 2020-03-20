@@ -1,0 +1,189 @@
+/*
+  STYLES GUIDE:
+  0. RESET
+  1. LAYOUT
+  2. GENERIC ITEMS
+  3. PARTS OF WEB
+  4. LIST
+  5. FORM
+  5. ANIMATIONS
+  ----------
+  COLORS:
+    color1 => #2c3e50;
+    color2 => #34495e;
+    color3 => #3498db;
+    color4 => #fff;
+*/
+
+/* 0 RESET */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.Logo
+{
+  margin-top: 35px;
+  filter: invert();
+}
+
+/* 1 LAYOUT */
+  body { text-align: center; font:300 20px/1.7 'Roboto Condensed';}
+
+  .header { display: flex; justify-content: center; align-items: center; }
+
+  .navbar { display: flex; justify-content: center; align-items: center; background: #abcdef; }
+
+
+  .list-services {display: flex; align-items: center; justify-content: center;}
+  .list-services figure { display: flex; justify-content: center; align-items: center; flex-flow: column;}
+/* 2 GENERIC ITEMS */
+
+  .header { height: 470px; ; background-size: cover;}
+  .navbar { height: 63px; background: #2c3e50; border-bottom: 1px dashed #000;}
+    .navbar a { padding: 0 20px; color: #fff; text-decoration: none; text-transform: uppercase; font: 20px 'Stint Ultra Condensed';}
+  .title {margin-bottom: 40px; font: 60px 'Stint Ultra Condensed'; text-transform: uppercase;}
+  p {margin-bottom: 40px;}
+
+  .btn { border: 2px solid #fff; padding: 10px 40px; display: inline-block; text-decoration: none; color: #fff;}
+
+
+  .features
+  { 
+    text-decoration: underline;
+    margin-top: 70px;
+    font: inherit;
+    font: 60px 'Stint Ultra Condensed'; text-transform: uppercase;
+  }
+
+/* 3 PARTS OF WEB */
+  .content { padding: 80px 0;}
+
+    .who 
+    {
+        background: #2c3e50; color: #fff;
+        height: 700px;;
+    }
+      .who p { max-width: 1055px; margin: 0 auto;}
+    .services 
+    {
+        background: #34495e;color: #fff;
+        height: 500px;
+    }
+
+    .tarifas 
+    { 
+      text-align: center;
+      display: flex;
+      justify-content: space-around;
+      background-size: cover; color: #000;
+      align-items: center;
+    }
+      .contain
+      { 
+        margin: 50px 60px;
+        width: 30%;
+        text-align: center;
+      }
+      .tarifas p 
+      {
+       margin-top: 25px;
+      }
+      
+      
+
+/* 3 LIST  */
+
+  .list-services figure { position: relative; width: 150px; height: 190px;}
+  .list-services figure:after {content: ""; position: absolute; top: 0; left: 0; border-radius: 50%; z-index: 0; background: #fff; width: 150px; height: 150px;}
+    .list-services img {position: relative; z-index: 1;}
+  .list-services li { padding: 0 30px; }
+  .list-services figcaption { position: relative; left: 0; right: 0; bottom: -40px;}
+
+  .footer
+  { 
+    margin-bottom: 50px;
+	  padding: 0;
+  	border: 0;
+    background: #34495e;
+    color: #fff;
+    height: 450px;;
+    
+  }
+
+  .footer h2 
+  {
+    text-decoration: underline;
+    margin-top: 70px;
+    font: inherit;
+    font: 60px 'Stint Ultra Condensed'; text-transform: uppercase;
+    padding: 50px;
+  }
+
+  .footer p 
+  {
+    padding: 0px 600px;
+   
+  }
+  .final
+  {
+    margin: 30px 0px;
+  }
+  .image
+  { 
+    margin: 10px 0px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+  }
+footer
+{
+  margin-top: 20px;
+  font-size: 30px;
+  text-decoration: underline;
+}
+/* 3 ANIMATIONS */
